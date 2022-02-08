@@ -6,9 +6,9 @@ module "checkgithub" {
     AccountName  = "checkgithub"
     # Syntax for top-level OU
     ManagedOrganizationalUnit = "Sandboxes"
-    SSOUserEmail     = "admin@amazon.com"
-    SSOUserFirstName = ="Admin"
-    SSOUserLastName  = "Acloudserve"
+    SSOUserEmail     = "checkgithub@acloudserve.com"
+    SSOUserFirstName = ="checkinggithub"
+    SSOUserLastName  = "acloudserve"
   }
 
   account_tags = {
