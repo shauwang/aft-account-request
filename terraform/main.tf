@@ -1,13 +1,15 @@
-module "checkgithub" {
+module "checkinggithub" {
   source = "./modules/aft-account-request"
 
   control_tower_parameters = {
-    AccountEmail = "checkgithub@acloudserve.com"
-    AccountName  = "checkgithub"
+    AccountEmail = "checkinggithub@acloudserve.com"
+    AccountName  = "checkinggithub"
     # Syntax for top-level OU
     ManagedOrganizationalUnit = "Sandboxes"
-    SSOUserEmail     = "checkgithub@acloudserve.com"
-    SSOUserFirstName = ="checkinggithub"
+    # Syntax for nested OU
+    # ManagedOrganizationalUnit = "Sandbox (ou-xfe5-a8hb8ml8)"
+    SSOUserEmail     = "checkinggithub@acloudserve.com"
+    SSOUserFirstName = "checkinggithub"
     SSOUserLastName  = "acloudserve"
   }
 
