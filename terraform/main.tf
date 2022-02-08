@@ -4,11 +4,22 @@ module "checkgithub" {
   control_tower_parameters = {
     AccountEmail = "checkgithub@acloudserve.com"
     AccountName  = "checkgithub"
+    # Syntax for top-level OU
     ManagedOrganizationalUnit = "Sandboxes"
-
-    SSOUserEmail     = "admin@acloudserve.com"
-    SSOUserFirstName = "Admin"
+    SSOUserEmail     = "admin@amazon.com"
+    SSOUserFirstName = ="Admin"
     SSOUserLastName  = "Acloudserve"
+  }
+
+  account_tags = {
+    "ABC:Owner"       = "checkgithub@acloudserve.com"
+    "ABC:Division"    = "ENT"
+    "ABC:Environment" = "Dev"
+    "ABC:CostCenter"  = "123456"
+    "ABC:Vended"      = "true"
+    "ABC:DivCode"     = "102"
+    "ABC:BUCode"      = "ABC003"
+    "ABC:Project"     = "123456"
   }
 
   change_management_parameters = {
